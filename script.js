@@ -18,6 +18,11 @@ function ageGetter() {
     }
 }
 
+function showAge() {
+  age_shower.innerText = document.getElementById("user_age_input").value;
+}
+
+
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -40,4 +45,3 @@ function filterFunction() {
     }
   }
 }
-
