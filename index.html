@@ -13,40 +13,114 @@
       <!-- navigation bar? -->
       <div id="nav-container">
         <!--the hastags will be replaced with div names later -->
-        <a href="#" id="nav-links">Get To Corona Advice</a>
+        <a href="#Corona-section" id="nav-links">Get COVID Advice</a>
         <a href="#" id="nav-links">Get To (something here) Advice</a>
         <a href="https://www.cdc.gov" target="_blank" id="nav-links">CDC Resources</a>
-      </div>
-
     </section>
 
+    <!-- <section class="infoDrop">
+      <h1 style="color:white;"><br>Covid Info Center</h1>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Info</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+            <a href="#first">What to do when you get Covid-19</a>
+            <a href="#second">Quarantine protocols</a>
+            <a href="#third">Covid-19 testing</a>
+            <a href="#fourth">Vaccination Information</a>
+            <a href="#fifth">Virus information</a>
+            <a href="#sixth">Symptoms</a>
+            <a href="#seventh">Live Tracker</a>
+          </div>
+        </div>
+    </section> -->
+    
     <section class="introduction">
       <div class="welcome-container">
       <p class="welcome-text"> 
-        Welcome to the COVID-19 advice center <br>  
-        ⠀⠀Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at iaculis risus. Nunc sagittis justo lacinia pulvinar consectetur. Duis risus est, tristique a volutpat ac, condimentum vel dui. Donec porttitor magna massa, non tempor diam laoreet non. Morbi lobortis laoreet ante eget finibus. Donec non commodo purus. Phasellus mattis odio lacus, eget tempus justo semper in. Duis est eros, venenatis id mauris vel, finibus consectetur turpis. Integer eu lectus a sapien suscipit mollis. Vestibulum non dui magna. Ut elementum eget tellus ac porta. Etiam eget tempor sem. Vivamus a ligula nec libero ullamcorper elementum. Maecenas sodales luctus arcu, quis aliquam enim luctus dapibus.
+        Welcome to the COVID-19 advice center! <br>  
+        ⠀⠀Here you can provide quick details like your current symptoms, your age, and an aproximate location to recieve information on what you should do during this worldwide COVID-19 pandemic. All of the information that we have is written breifly from the CDC, so you know you are getting trustable tips.<br>
+        ⠀⠀Your information is solely used to create a simple suggestion based on which symptoms you have combined with your age, because there are a different ways going about protecting yourself and others against the COVID-19 virus. Your location also will play a major factor in this advice, due to some areas in the world having high case numbers.
       </p>
-
-      <p class="welcome-text">
-        ⠀⠀Proin iaculis tincidunt diam, et congue orci semper vitae. Aenean tristique ultricies finibus. Vestibulum eget velit et tortor commodo luctus. Praesent nisi mauris, facilisis semper semper ut, sodales volutpat ex. Ut venenatis iaculis metus nec ultricies. Phasellus ut nisi ut risus blandit rhoncus eget non velit. Nam hendrerit dictum condimentum. Vestibulum sit amet nisi neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi rhoncus sem nibh, id tempor est lobortis eget. Sed nisi est, tempus non tellus a, tristique sagittis tellus. Phasellus a placerat lorem. Maecenas consectetur augue non ultricies iaculis. </p>
-        </div>
     </section>
 
+
+  <h2 style="color:#A51C30;">COVID Form</h2> <!-- someone can rename this -->
+  <br>
     <section class="formOne">
       <!-- one of the inputs? -->
       <form action="" method="GET">
-        <p style="color:white;"><strong> Please select your symptoms: </strong></p><br>
-        <input type="checkbox" name="symptoms" value="1"/>Headache<br>
-        <input type="checkbox" name="symptoms" value="2"/>Fatigue<br>
-        <input type="checkbox" name="symptoms" value="3"/>Cough<br>
-        <input type="checkbox" name="symptoms" value="4"/>Fever or chills<br>
-        <input type="checkbox" name="symptoms" value="5"/>Sore throat<br>
-        <input type="checkbox" name="symptoms" value="6"/>Runny nose or congestion<br>
-        <input type="checkbox" name="symptoms" value="7" />Shortness of breath<br>
-        <input type="checkbox" name="symptoms" value="8"/>Other
-        <br> <br>
-        <label for="age"> Age: </label>
-        <input type="number" id="user_age_input" name="age" placeholder="Your age"/>
+        <!--Checklist-->
+        <table>
+          <th><td colspan="3"><p style="color:white;"><strong> Please Select Your Symptoms: </strong></p><br></td></th>
+          <tr>
+            <td>
+              <center><input type="checkbox" id="cb1"/>
+              <label for="cb1" style="text-align:top">
+                <img src="https://www.health.harvard.edu/media/content/images/cr/bf58db0e-a495-4738-bbe6-cdb6cfb167a6.jpg" />
+                </label>
+                Headache</center>
+            </td>
+            <td>
+              <center><input type="checkbox" id="cb2" />
+              <label for="cb2"><img src="fatigued.png" /></label>
+              Fatigue</center>
+            </td>
+            <td>
+              <center><input type="checkbox" id="cb3" />
+            <label for="cb3">
+              <img src="https://lh3.googleusercontent.com/proxy/8-t5cdWoWEibLd6uHnkMpDr7Qb59KxKetaE1NT3rPHpX87PODmgAnoq0dJIZ3R3ol2TdzGAJHrvOWfe3eeqMb9bDuQ" /></label>
+              Cough</center>
+              </td>
+          </tr>  
+          <tr>
+            <td>
+              <center><input type="checkbox" id="cb5" />
+              <label for="cb5"><img src="https://lh3.googleusercontent.com/proxy/2Dco7hdYCprdfzT0GHPZbUmuckMCTiAbJ0aFlyZyMV8fLPXkjB2ziVL-gteTxfo5YNo2cn9RWRVXCUY9V5gGsqZsyw" />
+                </label>
+                Fever / Chills</center>
+            </td>
+            <td>
+              <center><input type="checkbox" id="cb6" />
+              <label for="cb6"><img src="https://www.drseemabshaikh.com/wp-content/uploads/2019/12/throat-infection.jpeg" /></label>
+              Sore Throat</center>
+            </td>
+            <td>
+              <center><input type="checkbox" id="cb7" />
+              <label for="cb7"><img src="https://bornrealist.com/wp-content/uploads/2018/10/get-rid-of-runny-nose.png" /></label>
+              Runny Nose/Congestion</center>
+            </td>
+          </tr> 
+          <tr>
+            <td>
+              <center><input type="checkbox" id="cb8" />
+              <label for="cb8"><img src="https://khealth.ai/wp-content/uploads/2020/01/health-guide-pneumonia.png" /></label>
+              Shortness of Breath</center>
+          </td>
+            <td>
+              <center><input type="checkbox" id="cb9" />
+               <label for="cb9"><img src="https://lh3.googleusercontent.com/proxy/prcuSIzF8jBhdjg9YCM0zbhL_keSyADPmohVQtMtJ0kfR9g2krdLjQrIWaNSIzW_o5xhm_yRekuFuukbgqPRgFjZ"/>
+               </label>
+               Muscle / Body Aches</center>
+            </td>
+            <td>
+              <center><input type="checkbox" id="cb10" />
+              <label for="cb10"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/smell2-1585934417.jpg" />
+              </label>
+              New Loss of Taste / Smell</center>
+            </td>
+          </tr> 
+        </table>
+        <!--End of Checklist-->
+
+        <br>
+        
+        <div class="slidecontainer">
+          <p>Select Your Age:</p>
+          <input type="range" min="1" max="100" value="18" class="slider" id="user_age_input" onchange="showAge()">
+          Your Age: <label name="age" id="age_shower"></label>
+        </div>
+
         <br> <br>
         <label for="location"> Location: </label>
         <input type="text" name="location" placeholder="San Jose, CA" />
@@ -55,11 +129,8 @@
       </form>
     </section>
 
-    <section> <!--advice area--> <!-- how would the advice be displayed? through an alert box? -->
-    </section>
-
-    <section>
-      <h1 style="color:white;"><br>Covid Info Center</h1>
+    <section class="infoCenter">
+      <h1 style="color:#A51C30; text-align:left;"><br>Covid Info Center</h1>
            <!--Searchbar
         <div class="topnav">
           <input id="searchbar" onkeyup="search_covid()" type="text"
@@ -94,43 +165,44 @@
             <button onclick="myFunction()" class="dropbtn">Info</button>
             <div id="myDropdown" class="dropdown-content">
               <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-              <a href="#">What to do when you get Covid-19</a>
-              <a href="#">Quarantine protocols</a>
-              <a href="#">Covid-19 testing</a>
-              <a href="#">Vaccination Information</a>
-              <a href="#">Symptoms</a>
-              <a href="#">Live tracker</a>
+              <a href="#first">What to do when you get Covid-19</a>
+              <a href="#second">Quarantine protocols</a>
+              <a href="#third">Covid-19 testing</a>
+              <a href="#fourth">Vaccination Information</a>
+              <a href="#fifth">Virus information</a>
+              <a href="#sixth">Symptoms</a>
+              <a href="#seventh">Live Tracker</a>
             </div>
           </div>
+    </section> 
 
-    </section>
-
-    <section class="covid-info">
+  <div id="Corona-section">
+    <section id="first" class="covid-info">
       <h2> What to do when you get Covid-19? </h2> 
       <p> Stay home as much as possible, and away from other people. If you live with other people, stay in a specific room and wear a mask around others. Get rest, make sure to stay hydrated. Monitor your symptoms and get help from a healthcare professional if your symptoms get worse. If you have any medical appointments, let your medical professional know you have COVID-19. </p>
     </section>
 
-    <section class="covid-info">
+    <section id="second" class="covid-info">
       <h2>Quarantine protocols:</h2>
-      <p> When you have came into contact with a  person that has Covid-19, make sure to stay home and distance yourself from other people for at least 14 days and watch for possible symptoms. 
+      <p> When you have came into contact with a person that has COVID-19, make sure to stay home and distance yourself from other people for at least 14 days and watch for possible symptoms. Make sure to wear a mask, and take care of your health by getting enough rest and drinking enough water.
     </section>
 
-    <section class="covid-info">
-      <h2>Covid-19 testing:</h2>
-      <p> There are a many Covid-19 testing sites available for free. Contact your health care provider or visit your state health department's website to find the lasted details and locations to get a test.  </p>
+    <section id="third" class="covid-info">
+      <h2>COVID-19 testing:</h2>
+      <p> Coronavirus testing helps determine if a person has the virus. There are a many COVID-19 testing sites available for free. Contact your health care provider or visit your state health department's website to find the lasted details and locations to get a test. </p>
     </section>
 
-    <section class="covid-info">
+    <section id="fourth" class="covid-info">
       <h2>Vaccination Information:</h2>
-      <p> </p>
+      <p> The Coronavirus can be prevented with a vaccine. Vaccines teach the immune system to recognize and fight COVID-19. Sometimes a person may experience symptoms after getting their shot, but this is completly normal and is a sign that the body is building protection against the virus. Vaccines have been professionlly developed and are required to meet many saftey requirementss before they are distributed for public use. They are safe, and cannot infect people with the virus. There are also many vaccination centers available, visit your state health deprtment's website to find more information. </p>
     </section>
 
-    <section class="covid-info">
+    <section id="fifth" class="covid-info">
       <h2>Virus information:</h2>
-      <p> The Coronavirus, also known as Covid-19 is an infectious disease that originated in China. THis virus spreads through respiratory droplets of saliva or discharge from the nose and mouth when a person sneezes or coughs. People who are older ages or have underlying medical conditions are more likely to contract Covid-19. Most people with the virus experience mild symptoms and can recover without medica treatment.</p>
+      <p> The Coronavirus, also known as COVID-19 is an infectious disease that originated in China. This virus spreads through respiratory droplets of saliva or discharge from the nose and mouth when a person sneezes or coughs. People who are older ages or have underlying medical conditions are more likely to contract COVID-19. Most people with the virus experience mild symptoms and can recover without medica treatment.</p>
     </section>
 
-    <section class="covid-info">
+    <section id="sixth" class="covid-info">
       <h2>Symptoms may include:</h2>
       <ul>
         <li> Fever or Chills</li>
@@ -143,18 +215,13 @@
         <li> Runny Nose or Congestion</li>
         <li> Loss of Smell or Taste</li>
       </ul>
-      <br>
     </section>
     
-    <section class="covid-info">
-        <h2>Live tracker:</h2>
-        <!--
-          The iframe won't change in height for some reason, ig we'll figure it out later
-
-        <iframe src="https://public.domo.com/cards/aKg4r" width="1400" height="1700" marginheight="0" marginwidth="0" frameborder="0"></iframe>
-        -->
+    <section id="seventh" class="covid-info">
+        <h2>Live Tracker:</h2>
+        <iframe id="covidFrame" src="https://www.trackcorona.live/map" width="800"></iframe>
     </section>
-
+  </div>
 </div>
 
     <footer class="foot">
@@ -163,3 +230,9 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- 
+COMMENTS:
+
+
+--> 
