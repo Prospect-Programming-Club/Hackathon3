@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 class="section-header"> Covid Buddy </h1>
+    <div>
+    <section>
+      <!-- navigation bar? -->
+      <div id="nav-container">
+        <!--the hastags will be replaced with div names later -->
+        <a href="#" id="nav-links">Get To Corona Advice</a>
+        <a href="#" id="nav-links">Get To (something here) Advice</a>
+        <a href="https://www.cdc.gov" id="nav-links">CDC Resources</a>
+      </div>
+
+    </section>
+
+    <section>
+      <!-- quick intro? -->
+      <p class="introduction"> Welcome to the ... Covid Help Center?? </p>
+    </section>
+
+    <section>
+      <!-- one of the inputs? -->
+      <form action="" method="GET">
+        <label for="condition"> Please select your symptoms: </label><br>
+        <input type="checkbox" name="symptoms" value="1"/>headache<br>
+        <input type="checkbox" name="symptoms" value="2"/>fatigue<br>
+        <input type="checkbox" name="symptoms" value="3"/>cough<br>
+        <input type="checkbox" name="symptoms" value="4"/>fever or chills<br>
+        <input type="checkbox" name="symptoms" value="5"/>sore throat<br>
+        <input type="checkbox" name="symptoms" value="6"/>runny nose or congestion<br>
+        <input type="checkbox" name="symptoms" value="7" /> shortness of breath<br>
+        <input type="checkbox" name="symptoms" value="8"/> other
+        <br> <br>
+        <label for="age"> Age: </label>
+        <input type="number" name="age" placeholder="28"/>
+        <br> <br>
+        <label for="location"> Location: </label>
+        <input type="text" name="location" placeholder="San Jose, CA" />
+        <br> <br>
+        <input type="submit" value="Submit"/> 
+      </form>
+    </section>
+
+    <section> <!--advice area--> <!-- how would the advice be displayed? through an alert box? -->
+    </section>
+
+    <section>
+      <h1><br>Covid Info Center</h1>
+           <!--Searchbar-->
+        <div class="topnav">
+          <input id="searchbar" onkeyup="search_covid()" type="text"
+        name="search" placeholder="Search...">
+          <ul id='list'> 
+            <li class="covid-options">What to do when you get Covid-19</li> 
+            <li class="covid-options">Quarantine protocols</li> 
+            <li class="covid-options">Covid-19 testing</li> 
+            <li class="covid-options">Vaccination Information</li> 
+            <li class="covid-options">Virus information</li>
+            <li class="covid-options">Symptoms</li> 
+            <li class="covid-options">Live tracker</li>  
+          </ul>
+        </div>
+        <br>
+      <!--End of Searchbar-->
+
+    </section>
+
+    <section>
+      <h2> What to do when you get Covid-19? </h2> 
+      <p> Stay home as much as possible, and away from other people. If you live with other people, stay in a specific room and wear a mask around others. Get rest, make sure to stay hydrated. Monitor your symptoms and get help from a healthcare professional if your symptoms get worse. If you have any medical appointments, let your medical professional know you have Covid-19. </p>
+    </section>
+
+    <section>
+      <h2>Quarantine protocols</h2>
+      <p> </p>
+    </section>
+
+    <section>
+      <h2>Covid-19 testing</h2>
+      <p> There are a many Covid-19 testing sites available for free. Contact your health care provider or visit your state health department's website to find the lasted details and locations to get a test.  </p>
+    </section>
+
+    <section>
+      <h2>Vaccination Information</h2>
+      <p> </p>
+    </section>
+
+    <section>
+      <h2>Virus information</h2>
+      <p> The Coronavirus, also known as Covid-19 is an infectious disease that originated in China. THis virus spreads through respiratory droplets of saliva</p>
+    </section>
+
+    <section>
+      <h2>Symptoms</h2>
+      <p> </p>
+    </section>
+    
+    <section>
+      <h2>Live tracker</h2>
+      <p> </p>
+    </section>
+
+</div>
+    <footer class="foot">
+      © Copyright 2021 - Amrik | Marko | Wendy
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
