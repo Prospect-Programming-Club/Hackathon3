@@ -23,6 +23,7 @@
     <section class="introduction">
       <div class="welcome-container">
       <p class="welcome-text"> 
+        Welcome to the COVID-19 advice center <br>  
         ⠀⠀Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at iaculis risus. Nunc sagittis justo lacinia pulvinar consectetur. Duis risus est, tristique a volutpat ac, condimentum vel dui. Donec porttitor magna massa, non tempor diam laoreet non. Morbi lobortis laoreet ante eget finibus. Donec non commodo purus. Phasellus mattis odio lacus, eget tempus justo semper in. Duis est eros, venenatis id mauris vel, finibus consectetur turpis. Integer eu lectus a sapien suscipit mollis. Vestibulum non dui magna. Ut elementum eget tellus ac porta. Etiam eget tempor sem. Vivamus a ligula nec libero ullamcorper elementum. Maecenas sodales luctus arcu, quis aliquam enim luctus dapibus.
       </p>
 
@@ -35,22 +36,22 @@
       <!-- one of the inputs? -->
       <form action="" method="GET">
         <p style="color:white;"><strong> Please select your symptoms: </strong></p><br>
-        <input type="checkbox" name="symptoms" value="1"/>headache<br>
-        <input type="checkbox" name="symptoms" value="2"/>fatigue<br>
-        <input type="checkbox" name="symptoms" value="3"/>cough<br>
-        <input type="checkbox" name="symptoms" value="4"/>fever or chills<br>
-        <input type="checkbox" name="symptoms" value="5"/>sore throat<br>
-        <input type="checkbox" name="symptoms" value="6"/>runny nose or congestion<br>
-        <input type="checkbox" name="symptoms" value="7" /> shortness of breath<br>
-        <input type="checkbox" name="symptoms" value="8"/> other
+        <input type="checkbox" name="symptoms" value="1"/>Headache<br>
+        <input type="checkbox" name="symptoms" value="2"/>Fatigue<br>
+        <input type="checkbox" name="symptoms" value="3"/>Cough<br>
+        <input type="checkbox" name="symptoms" value="4"/>Fever or chills<br>
+        <input type="checkbox" name="symptoms" value="5"/>Sore throat<br>
+        <input type="checkbox" name="symptoms" value="6"/>Runny nose or congestion<br>
+        <input type="checkbox" name="symptoms" value="7" />Shortness of breath<br>
+        <input type="checkbox" name="symptoms" value="8"/>Other
         <br> <br>
         <label for="age"> Age: </label>
-        <input type="number" name="age" placeholder="28"/>
+        <input type="number" id="user_age_input" name="age" placeholder="Your age"/>
         <br> <br>
         <label for="location"> Location: </label>
         <input type="text" name="location" placeholder="San Jose, CA" />
         <br> <br>
-        <input type="submit" value="Submit"/> 
+        <input type="submit" value="Submit" onclick="ageGetter()"/> 
       </form>
     </section>
 
@@ -59,7 +60,7 @@
 
     <section>
       <h1 style="color:white;"><br>Covid Info Center</h1>
-           <!--Searchbar-->
+           <!--Searchbar
         <div class="topnav">
           <input id="searchbar" onkeyup="search_covid()" type="text"
         name="search" placeholder="Search...">
@@ -75,54 +76,83 @@
         </div>
         <br>
         <br>
-      <!--End of Searchbar-->
+      -->
+
+<!--
+                <div class="topnav">
+                <div class="search-container">
+                  <form>
+                    <input type="text" placeholder="Search.." name="search">
+                  </form>
+                </div>
+              </div>
+              
+-->
+
+          <!--Drop Down Menu--> 
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Info</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+              <a href="#">What to do when you get Covid-19</a>
+              <a href="#">Quarantine protocols</a>
+              <a href="#">Covid-19 testing</a>
+              <a href="#">Vaccination Information</a>
+              <a href="#">Symptoms</a>
+              <a href="#">Live tracker</a>
+            </div>
+          </div>
 
     </section>
 
     <section class="covid-info">
       <h2> What to do when you get Covid-19? </h2> 
-      <p> Stay home as much as possible, and away from other people. If you live with other people, stay in a specific room and wear a mask around others. Get rest, make sure to stay hydrated. Monitor your symptoms and get help from a healthcare professional if your symptoms get worse. If you have any medical appointments, let your medical professional know you have Covid-19. </p>
+      <p> Stay home as much as possible, and away from other people. If you live with other people, stay in a specific room and wear a mask around others. Get rest, make sure to stay hydrated. Monitor your symptoms and get help from a healthcare professional if your symptoms get worse. If you have any medical appointments, let your medical professional know you have COVID-19. </p>
     </section>
 
     <section class="covid-info">
-      <h2>Quarantine protocols</h2>
+      <h2>Quarantine protocols:</h2>
       <p> When you have came into contact with a  person that has Covid-19, make sure to stay home and distance yourself from other people for at least 14 days and watch for possible symptoms. 
     </section>
 
     <section class="covid-info">
-      <h2>Covid-19 testing</h2>
+      <h2>Covid-19 testing:</h2>
       <p> There are a many Covid-19 testing sites available for free. Contact your health care provider or visit your state health department's website to find the lasted details and locations to get a test.  </p>
     </section>
 
     <section class="covid-info">
-      <h2>Vaccination Information</h2>
+      <h2>Vaccination Information:</h2>
       <p> </p>
     </section>
 
     <section class="covid-info">
-      <h2>Virus information</h2>
+      <h2>Virus information:</h2>
       <p> The Coronavirus, also known as Covid-19 is an infectious disease that originated in China. THis virus spreads through respiratory droplets of saliva or discharge from the nose and mouth when a person sneezes or coughs. People who are older ages or have underlying medical conditions are more likely to contract Covid-19. Most people with the virus experience mild symptoms and can recover without medica treatment.</p>
     </section>
 
     <section class="covid-info">
       <h2>Symptoms may include:</h2>
       <ul>
-        <li> fever or chills</li>
-        <li> shortness of breath</li>
-        <li> nausea or vomitting</li>
-        <li> headache</li>
-        <li> body aches</li>
-        <li> cough</li>
-        <li> sore throat</li>
-        <li> runny nose or congestion</li>
-        <li> loss of smell or taste</li>
+        <li> Fever or Chills</li>
+        <li> Shortness of Breath</li>
+        <li> Nausea or Vomitting</li>
+        <li> Headache</li>
+        <li> Body Aches</li>
+        <li> Cough</li>
+        <li> Sore Throat</li>
+        <li> Runny Nose or Congestion</li>
+        <li> Loss of Smell or Taste</li>
       </ul>
       <br>
     </section>
     
     <section class="covid-info">
-        <h2>Live tracker</h2>
-        <iframe src="https://public.domo.com/cards/aKg4r" width="1400" height="5000" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+        <h2>Live tracker:</h2>
+        <!--
+          The iframe won't change in height for some reason, ig we'll figure it out later
+
+        <iframe src="https://public.domo.com/cards/aKg4r" width="1400" height="1700" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+        -->
     </section>
 
 </div>
@@ -133,16 +163,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- 
-COMMENTS:
-we are gonna have to make it lookk good as well so like maybe some images, footer, and like a top navigation bar that can scroll to the input
-
-
-
-actually more like 5 mins lol
-okay so our ideas are to make a covid related website that can take in user input about themselves such as their condition, age, location, and using their input, we give them advice about what they should do. The website also would have other features such as a covid info section, and a a tracker of the input from other users.
-
-we pretty much have 3 sections: user input, covid info, and input history
-
---> 
