@@ -30,12 +30,12 @@ h2 {
   padding-right: 1%;
 }
 a:hover {
-  color:#A51C30;
+  color:rgb(184, 80, 95);
   font-size: 16px;
 }
 
 a:active {
-  color:#A51C30;
+  color:rgb(42, 247, 151);
   font-size: 16px;
 }
 
@@ -45,8 +45,8 @@ a {
 }
 
 .introduction {
-  padding-top:15px;
-  padding-bottom: 23px;
+  padding-top:20px;
+  padding-bottom: 28px;
 }
 
 .welcome-container {
@@ -61,45 +61,13 @@ a {
 }
 
 .formOne {
-  padding-top: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .topnav {
   float: left;
 }
-
-/* Searchbar: */
-#searchbar{ 
-     margin-left: 15%; 
-     padding:15px; 
-     border-radius: 10px; 
-   } 
- 
-   input[type=text] { 
-      -webkit-transition: width 0.15s ease-in-out; 
-      transition: width 0.15s ease-in-out; 
-   }
- 
-   /* When the input field gets focus, 
-        change its width to 100% */
-   input[type=text]:focus { 
-     width: 70%; 
-   } 
- 
-  #list{ 
-    font-size:  1.5em; 
-    margin-left: 90px; 
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */  
-   } 
- 
-.covid-options{ 
-   display: list-item; 
-   font-size:16px;  
-}
-  /*End of Searchbar*/
-
 
 .covid-info {
   padding: 15px;
@@ -114,3 +82,163 @@ a {
   padding-top: 1500px;
   padding-bottom: 20px;
 }
+
+/*
+#searchbar{ 
+     margin-left: 15%; 
+     padding:15px; 
+     border-radius: 10px; 
+   } 
+ 
+   input[type=text] { 
+      -webkit-transition: width 0.15s ease-in-out; 
+      transition: width 0.15s ease-in-out; 
+   }
+ 
+   input[type=text]:focus { 
+     width: 70%; 
+   } 
+ 
+  #list{ 
+    font-size:  1.5em; 
+    margin-left: 90px; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;   
+   }
+ 
+.covid-options{ 
+   display: list-item; 
+   font-size:16px;  
+}
+*/
+
+
+/*
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+*/
+
+/*Start of Drop Down Menu*/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #A51C30;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #A51C30;
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #A51C30;
+}
+
+.dropdown-content a:hover {background-color: tomato}
+
+
+.show {display:block;}
+
+/*End of Drop Down Menu*/
