@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>CovidBuddy</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1 class="section-header"> Covid Buddy </h1>
+    <h1 class="title-header"> Covid Buddy </h1>
     <div>
     <section>
       <!-- navigation bar? -->
@@ -15,20 +15,26 @@
         <!--the hastags will be replaced with div names later -->
         <a href="#" id="nav-links">Get To Corona Advice</a>
         <a href="#" id="nav-links">Get To (something here) Advice</a>
-        <a href="https://www.cdc.gov" id="nav-links">CDC Resources</a>
+        <a href="https://www.cdc.gov" target="_blank" id="nav-links">CDC Resources</a>
       </div>
 
     </section>
 
-    <section>
-      <!-- quick intro? -->
-      <p class="introduction"> Welcome to the ... Covid Help Center?? </p>
+    <section class="introduction">
+      <div class="welcome-container">
+      <p class="welcome-text"> 
+        ⠀⠀Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at iaculis risus. Nunc sagittis justo lacinia pulvinar consectetur. Duis risus est, tristique a volutpat ac, condimentum vel dui. Donec porttitor magna massa, non tempor diam laoreet non. Morbi lobortis laoreet ante eget finibus. Donec non commodo purus. Phasellus mattis odio lacus, eget tempus justo semper in. Duis est eros, venenatis id mauris vel, finibus consectetur turpis. Integer eu lectus a sapien suscipit mollis. Vestibulum non dui magna. Ut elementum eget tellus ac porta. Etiam eget tempor sem. Vivamus a ligula nec libero ullamcorper elementum. Maecenas sodales luctus arcu, quis aliquam enim luctus dapibus.
+      </p>
+
+      <p class="welcome-text">
+        ⠀⠀Proin iaculis tincidunt diam, et congue orci semper vitae. Aenean tristique ultricies finibus. Vestibulum eget velit et tortor commodo luctus. Praesent nisi mauris, facilisis semper semper ut, sodales volutpat ex. Ut venenatis iaculis metus nec ultricies. Phasellus ut nisi ut risus blandit rhoncus eget non velit. Nam hendrerit dictum condimentum. Vestibulum sit amet nisi neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi rhoncus sem nibh, id tempor est lobortis eget. Sed nisi est, tempus non tellus a, tristique sagittis tellus. Phasellus a placerat lorem. Maecenas consectetur augue non ultricies iaculis. </p>
+        </div>
     </section>
 
-    <section>
+    <section class="formOne">
       <!-- one of the inputs? -->
       <form action="" method="GET">
-        <label for="condition"> Please select your symptoms: </label><br>
+        <p style="color:white;"><strong> Please select your symptoms: </strong></p><br>
         <input type="checkbox" name="symptoms" value="1"/>headache<br>
         <input type="checkbox" name="symptoms" value="2"/>fatigue<br>
         <input type="checkbox" name="symptoms" value="3"/>cough<br>
@@ -52,7 +58,7 @@
     </section>
 
     <section>
-      <h1><br>Covid Info Center</h1>
+      <h1 style="color:white;"><br>Covid Info Center</h1>
            <!--Searchbar-->
         <div class="topnav">
           <input id="searchbar" onkeyup="search_covid()" type="text"
@@ -68,46 +74,59 @@
           </ul>
         </div>
         <br>
+        <br>
       <!--End of Searchbar-->
 
     </section>
 
-    <section>
+    <section class="covid-info">
       <h2> What to do when you get Covid-19? </h2> 
       <p> Stay home as much as possible, and away from other people. If you live with other people, stay in a specific room and wear a mask around others. Get rest, make sure to stay hydrated. Monitor your symptoms and get help from a healthcare professional if your symptoms get worse. If you have any medical appointments, let your medical professional know you have Covid-19. </p>
     </section>
 
-    <section>
+    <section class="covid-info">
       <h2>Quarantine protocols</h2>
-      <p> </p>
+      <p> When you have came into contact with a  person that has Covid-19, make sure to stay home and distance yourself from other people for at least 14 days and watch for possible symptoms. 
     </section>
 
-    <section>
+    <section class="covid-info">
       <h2>Covid-19 testing</h2>
       <p> There are a many Covid-19 testing sites available for free. Contact your health care provider or visit your state health department's website to find the lasted details and locations to get a test.  </p>
     </section>
 
-    <section>
+    <section class="covid-info">
       <h2>Vaccination Information</h2>
       <p> </p>
     </section>
 
-    <section>
+    <section class="covid-info">
       <h2>Virus information</h2>
-      <p> The Coronavirus, also known as Covid-19 is an infectious disease that originated in China. THis virus spreads through respiratory droplets of saliva</p>
+      <p> The Coronavirus, also known as Covid-19 is an infectious disease that originated in China. THis virus spreads through respiratory droplets of saliva or discharge from the nose and mouth when a person sneezes or coughs. People who are older ages or have underlying medical conditions are more likely to contract Covid-19. Most people with the virus experience mild symptoms and can recover without medica treatment.</p>
     </section>
 
-    <section>
-      <h2>Symptoms</h2>
-      <p> </p>
+    <section class="covid-info">
+      <h2>Symptoms may include:</h2>
+      <ul>
+        <li> fever or chills</li>
+        <li> shortness of breath</li>
+        <li> nausea or vomitting</li>
+        <li> headache</li>
+        <li> body aches</li>
+        <li> cough</li>
+        <li> sore throat</li>
+        <li> runny nose or congestion</li>
+        <li> loss of smell or taste</li>
+      </ul>
+      <br>
     </section>
     
-    <section>
-      <h2>Live tracker</h2>
-      <p> </p>
+    <section class="covid-info">
+        <h2>Live tracker</h2>
+        <iframe src="https://public.domo.com/cards/aKg4r" width="1400" height="5000" marginheight="0" marginwidth="0" frameborder="0"></iframe>
     </section>
 
 </div>
+
     <footer class="foot">
       © Copyright 2021 - Amrik | Marko | Wendy
     </footer>
@@ -115,3 +134,15 @@
   </body>
 </html>
 
+<!-- 
+COMMENTS:
+we are gonna have to make it lookk good as well so like maybe some images, footer, and like a top navigation bar that can scroll to the input
+
+
+
+actually more like 5 mins lol
+okay so our ideas are to make a covid related website that can take in user input about themselves such as their condition, age, location, and using their input, we give them advice about what they should do. The website also would have other features such as a covid info section, and a a tracker of the input from other users.
+
+we pretty much have 3 sections: user input, covid info, and input history
+
+--> 
