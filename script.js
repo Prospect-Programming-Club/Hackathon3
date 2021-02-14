@@ -1,16 +1,16 @@
 function ageGetter() {
   event.preventDefault();
-  var input = document.getElementById("user_age_input").value; 
-    if (input <= 0) {
+  var age_input = document.getElementById("user_age_input").value; 
+    if (age_input <= 0) {
       alert("Error, please input an appropriate age.");
     }
-    else if (input <= 20) {
+    else if (age_input <= 20) {
       alert("You are not at risk! Be safe!");
    } 
-    else if (input <=55){
+    else if (age_input <=55){
       alert("You are not at immediate risk, but stay safe!");
     }
-    else if (input > 55){
+    else if (age_input > 55){
       alert("Watch out! You are in the risky category!");
     }
     else {
@@ -22,7 +22,14 @@ function showAge() {
   age_shower.innerText = "Your Age: " + document.getElementById("user_age_input").value;
 }
 
-
+function onSubmit(){
+  //find out how many checkboxes yuu have selected
+  const cbs = document.querySelectorAll('input[name="sympton"]');
+    cbs.forEach((cb) => {
+        if(cb.checked)
+         alert(cb.value) ; 
+    });
+}
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -50,7 +57,7 @@ function filterFunction() {
 const revealInfo = document.querySelector('#Corona-section');
 window.onscroll = function(){
     var infoscroll = window.scrollY;
-    if (infoscroll >= 220){
+    if (infoscroll >= 250){
         revealInfo.classList.add('active')
     }else{
         revealInfo.classList.remove('active');
