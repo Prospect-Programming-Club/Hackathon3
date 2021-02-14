@@ -1,6 +1,6 @@
-function ageGetter() {
-  event.preventDefault();
-  var age_input = document.getElementById("user_age_input").value; 
+function ageGetter(age_input) {
+  //event.preventDefault();
+  //var age_input = document.getElementById("user_age_input").value; 
     if (age_input <= 0) {
       alert("Error, please input an appropriate age.");
     }
@@ -23,12 +23,26 @@ function showAge() {
 }
 
 function onSubmit(){
+  event.preventDefault();
+  var age_input = document.getElementById("user_age_input").value; 
   //find out how many checkboxes yuu have selected
+  var AllYourSymptons = "";
+  var numberOfSymptoms = 0;
   const cbs = document.querySelectorAll('input[name="sympton"]');
     cbs.forEach((cb) => {
-        if(cb.checked)
-         alert(cb.value) ; 
-    });
+        if(cb.checked){
+            AllYourSymptons = AllYourSymptons + "\n" + cb.value;
+            numberOfSymptoms++;
+        }
+    }); //end of foreach loop
+    //now show all the AllYourSymptons
+    if (numberOfSymptoms > 0) {
+      alert("Careful! You have the following symptoms: " + AllYourSymptons + "\nSo please stay at home and quarantine yourself! \nAlso, please go to your nearest COVID-19 testing center safely and with a mask. Always remain 6-feet apart!");
+    }
+    else {
+      alert("Great, you don't have any symptoms. However, be careful and always remember to wash your hands, stay 6-feet apart, and wear a mask when going outside.");
+      ageGetter(age_input);
+    }
 }
 
 /* When the user clicks on the button,
