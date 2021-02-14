@@ -50,9 +50,15 @@ function filterFunction() {
 const revealInfo = document.querySelector('#Corona-section');
 window.onscroll = function(){
     var infoscroll = window.scrollY;
-    if (infoscroll >= 200){
+    if (infoscroll >= 220){
         revealInfo.classList.add('active')
     }else{
         revealInfo.classList.remove('active');
     }
+}
+
+/*Zipcode*/
+function zipcodeGetter() {
+  var input = document.getElementById("input_zipcode").value;
+  alert(input);
 }
