@@ -77,9 +77,3 @@ window.onscroll = function(){
         revealInfo.classList.remove('active');
     }
 }
-
-/*Zipcode*/
-function zipcodeGetter() {
-  var input = document.getElementById("input_zipcode").value;
-  alert(input);
-}
