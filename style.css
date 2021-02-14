@@ -17,11 +17,12 @@ h2 {
 }
 
 #nav-container {
-  outline: 3px solid black;
-  height: 40px;
-  width: auto;
+  outline: 3px solid gold;
+  height: auto;
+  width: 50%;
   padding:10px;
   text-align:center;
+  margin:auto;
 }
 
 #nav-links {
@@ -51,8 +52,16 @@ a {
   font-size: 16px;
 }
 
-.Corona-section {
+
+#Corona-section {
   scroll-behavior: smooth;
+  transition: all 5s;
+  opacity: 0;
+}
+
+#Corona-section.active {
+  opacity: 1;
+  transition: all 5s;
 }
 
 .introduction {
