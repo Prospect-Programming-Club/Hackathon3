@@ -13,6 +13,12 @@ h2 {
   color:white;
 }
 
+#Logo {
+  height: 90px;
+  width:100px;
+  margin: left;
+}
+
 .title-header {
   text-align: center;
   padding-bottom: 15px;
@@ -94,15 +100,19 @@ a {
 }
 
 .covid-info {
-  float: left;
-  padding-top: 20px;
-  padding-bottom:10px;
+  padding-top: 40px;
+  padding-bottom:40px;
 }
 
 .infoCenter {
-  padding-top:20px;
+  padding-top:10px;
   padding-bottom:15px;
   border: 1px, solid, black;
+}
+
+.space {
+  padding: 16px;
+  margin: auto;
 }
 
 /* Change the distance from the last element on the page to the footer */
@@ -110,7 +120,7 @@ a {
   text-align: center;
   color:#D3D3D3;
   font-size:15px;
-  padding-top: 2200px;
+  padding-top: 1700px;
   padding-bottom: 20px;
 }
 
@@ -299,13 +309,12 @@ iframe {
   max-width: 100%; 
 }
 
-.float-left {
-  float: left;
-}
-
-.float-right {
+.covidMolecule {
+  width: 250px;
+  height: 250px;
   float: right;
 }
 
-.LiveInformation {
+.imgunderdropdown {
+  height: 334px;
 }
