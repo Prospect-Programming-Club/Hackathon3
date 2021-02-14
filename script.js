@@ -19,7 +19,7 @@ function ageGetter() {
 }
 
 function showAge() {
-  age_shower.innerText = document.getElementById("user_age_input").value;
+  age_shower.innerText = "Your Age: " + document.getElementById("user_age_input").value;
 }
 
 
@@ -44,4 +44,15 @@ function filterFunction() {
       a[i].style.display = "none";
     }
   }
+}
+
+
+const revealInfo = document.querySelector('#Corona-section');
+window.onscroll = function(){
+    var infoscroll = window.scrollY;
+    if (infoscroll >= 200){
+        revealInfo.classList.add('active')
+    }else{
+        revealInfo.classList.remove('active');
+    }
 }
