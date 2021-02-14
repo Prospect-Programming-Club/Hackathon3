@@ -14,6 +14,7 @@ h2 {
   text-align: center;
   padding-bottom: 15px;
   color:#A51C30;
+  font-size:30px;
 }
 
 #nav-container {
@@ -34,8 +35,7 @@ h2 {
   background-color: #A51C30;
 }
 a:hover {
-  color:dodgerblue;
-  font-size: 16px;
+  color:goldenrod;
 }
 
 .infoDrop {
@@ -91,12 +91,11 @@ a {
 }
 
 .covid-info {
-  padding: 15px;
   float: left;
 }
 
 .infoCenter {
-  padding-top:80px;
+  padding-top:20px;
   padding-bottom:15px;
   border: 1px, solid, black;
 }
@@ -106,7 +105,7 @@ a {
   text-align: center;
   color:#D3D3D3;
   font-size:15px;
-  padding-top: 1000px;
+  padding-top: 1200px;
   padding-bottom: 20px;
 }
 
@@ -141,6 +140,7 @@ a {
 .dropdown {
   position: relative;
   display: inline-block;
+  padding-bottom:100px;
 }
 
 .dropdown-content {
@@ -206,11 +206,11 @@ a {
 /*End of SLider*/
 
 /*Checkbox*/
-ul {
+.ulStyle {
   list-style-type: none;
 }
 
-li {
+.liDisplay{
   display: inline-block;
 }
 
@@ -283,3 +283,11 @@ td img {
   z-index: -1;
 }
 /*End of Checkbox*/
+
+
+iframe {
+  width: 800px;
+  height: 500px;
+  max-width: 100%; 
+}
+
