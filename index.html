@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>CovidBuddy</title>
+    <title>Covid Buddy</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1 class="title-header"> Covid Buddy </h1>
+    <h1 class="title-header">Covid Buddy</h1>
     <div>
     <section>
       <!-- navigation bar? -->
       <div id="nav-container">
         <!--the hastags will be replaced with div names later -->
-          <a href="#Corona-section" id="nav-links">Get COVID Advice</a></button>
-          <a href="#" id="nav-links">Get To (something here) Advice</a></button>
+          <a href="#Corona-section" id="nav-links">Get COVID-19 Info</a></button>
+          <a href="#" id="nav-links">Get COVID-19 Advice</a></button>
           <a href="https://www.cdc.gov" target="_blank" id="nav-links">CDC Resources</a></button>
     </section>
     
@@ -22,8 +22,8 @@
       <div class="welcome-container">
       <p class="welcome-text"> 
         Welcome to the COVID-19 advice center! <br>  
-        ⠀⠀Here you can provide quick details like your current symptoms, your age, and an aproximate location to recieve information on what you should do during this worldwide COVID-19 pandemic. All of the information that we have is written breifly from the CDC, so you know you are getting trustable tips.<br>
-        ⠀⠀Your information is solely used to create a simple suggestion based on which symptoms you have combined with your age, because there are a different ways going about protecting yourself and others against the COVID-19 virus. Your location also will play a major factor in this advice, due to some areas in the world having high case numbers.
+        ⠀⠀Here you can provide quick details like your current symptoms, your age, and an approximate location to receive information on what you should do during this worldwide COVID-19 pandemic. All of the information that we have is written briefly from the CDC, so you know you are getting trustable tips.<br>
+        ⠀⠀Your information is solely used to create a simple suggestion based on which symptoms you have combined with your age, because there are a different ways going about protecting yourself and others against the COVID-19 virus. To speed up the process of finding out your 
       </p>
     </section>
 
@@ -107,31 +107,27 @@
             <label name="age" id="age_shower">Your Age: </label>
           </div>
         </div>
-
-        <label for="location"> Location: </label>
-        <input type="text" name="location" placeholder="San Jose, CA" />
-        <br> <br>
         <input type="submit" value="Submit" onclick="ageGetter()"/> 
       </form>
     </section>
 
     <section class="infoCenter">
       <h1 style="color:#A51C30; text-align:left;"><br>Covid Info Center</h1>
-
-          <!--Drop Down Menu--> 
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Info</button>
-            <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
-              <a href="#first">What to do when you get Covid-19</a>
-              <a href="#second">Quarantine protocols</a>
-              <a href="#third">Covid-19 testing</a>
-              <a href="#fourth">Vaccination Information</a>
-              <a href="#fifth">Virus information</a>
-              <a href="#sixth">Symptoms</a>
-              <a href="#seventh">Live Tracker</a>
-            </div>
-          </div>
+  
+    <!--Drop Down Menu--> 
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Info</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+            <a href="#first">What to do when you get Covid-19</a>
+            <a href="#second">Quarantine protocols</a>
+            <a href="#third">Covid-19 testing</a>
+            <a href="#fourth">Vaccination Information</a>
+            <a href="#fifth">Virus information</a>
+            <a href="#sixth">Symptoms</a>
+            <a href="#seventh">Live Tracker</a>
+        </div>
+      </div>
     </section> 
 
   <div id="Corona-section">
@@ -147,25 +143,39 @@
 
     <section id="third" class="covid-info">
       <h2>COVID-19 testing:</h2>
-      <p> Coronavirus testing helps determine if a person has the virus. There are a many COVID-19 testing sites available for free. Contact your health care provider or visit your state health department's website to find the lasted details and locations to get a test. </p>
+      <p> Coronavirus testing helps determine if a person has the virus. There are a many COVID-19 testing sites available for free. Contact your health care provider or visit your state health department's website to find the latest details and locations to get a test. <br>
+      Below you can input your city and state to find the nearest COVID-19 Testing Center next to you!</p>
+
+      <!--
+      <label for="zipcode" width="200" height="75"> Enter Your Zipcode: </label>
+      <input name="zipcode" placeholder="zipcode (5 Digits)" id="input_zipcode"/>
+      <input type="submit" value="Submit" onclick="zipcodeGetter()"/>
+      -->
+      <br>
+      <iframe id="zipcode"
+        title="user zipcode"
+        src="https://sccgov.maps.arcgis.com/apps/webappviewer/index.html?id=b90dc6181a9f481a956aef9218b84d0a"> <!--Check if that works-->
+      </iframe>
+      
+      <br> <br>
     </section>
 
     <section id="fourth" class="covid-info">
       <h2>Vaccination Information:</h2>
-      <p> The Coronavirus can be prevented with a vaccine. Vaccines teach the immune system to recognize and fight COVID-19. Sometimes a person may experience symptoms after getting their shot, but this is completly normal and is a sign that the body is building protection against the virus. Vaccines have been professionlly developed and are required to meet many saftey requirementss before they are distributed for public use. They are safe, and cannot infect people with the virus. There are also many vaccination centers available, visit your state health deprtment's website to find more information. </p>
+      <p> The Coronavirus can be prevented with a vaccine. Vaccines teach the immune system to recognize and fight COVID-19. Sometimes a person may experience symptoms after getting their shot, but this is completly normal and is a sign that the body is building protection against the virus. Vaccines have been professionally developed and are required to meet many safety requirements before they are distributed for public use. They are safe, and cannot infect people with the virus. There are also many vaccination centers available, visit your state health department's website to find more information. </p>
     </section>
 
     <section id="fifth" class="covid-info">
-      <h2>Virus information:</h2>
-      <p> The Coronavirus, also known as COVID-19 is an infectious disease that originated in China. This virus spreads through respiratory droplets of saliva or discharge from the nose and mouth when a person sneezes or coughs. People who are older ages or have underlying medical conditions are more likely to contract COVID-19. Most people with the virus experience mild symptoms and can recover without medica treatment.</p>
+      <h2>Virus Information:</h2>
+      <p> The Coronavirus, also known as COVID-19 is an infectious disease that originated in China. This virus spreads through respiratory droplets of saliva or discharge from the nose and mouth when a person sneezes or coughs. People who are older ages or have underlying medical conditions are more likely to contract COVID-19. Most people with the virus experience mild symptoms and can recover without medical treatment.</p>
     </section>
 
-    <section id="sixth" class="covid-info">
-      <h2>Symptoms may include:</h2>
+    <section id="sixth">
+      <h2>Symptoms May Include:</h2>
       <ul>
         <li> Fever or Chills</li>
         <li> Shortness of Breath</li>
-        <li> Nausea or Vomitting</li>
+        <li> Nausea or Vomiting</li>
         <li> Headache</li>
         <li> Body Aches</li>
         <li> Cough</li>
@@ -177,10 +187,12 @@
     
     <section id="seventh" class="covid-info">
         <h2>Live Tracker:</h2>
-        <iframe id="covidFrame" src="https://www.trackcorona.live/map" width="800"></iframe>
+        <iframe src="https://public.domo.com/cards/aKg4r" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
     </section>
   </div>
 </div>
+
+    
 
     <footer class="foot">
       © Copyright 2021 - Amrik | Marko | Wendy
